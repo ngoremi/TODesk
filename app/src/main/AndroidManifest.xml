@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TODeskApp"
+        tools:targetApi="31" >
+        <activity
+            android:name=".ElimActivity"
+            android:exported="true"
+            android:label="@string/title_activity_elim"
+            android:theme="@style/Theme.TODeskApp.NoActionBar" />
+        <!-- sample code, delete later -->
+        <!--
+<activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TODeskApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".MainMenu"
+            android:label="main menu"
+            android:exported="true"
+            android:theme="@style/Theme.TODeskApp" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      
+        <activity
+            android:name=".AccountChoice"
+            android:label="account_choice" > <!-- Optional: You can set a specific label for the activity -->
+        </activity>
+
+        <activity android:name=".AccessEditView"
+            android:label="access edit view">
+        </activity>
+
+        <activity
+            android:name=".AccessTournament"
+            android:label="access tournament" > <!-- Optional: You can set a specific label for the activity -->
+        </activity>
+
+        <activity android:name=".AddPlayer"
+            android:label="add player">
+        </activity>
+
+        <activity android:name=".ConfigureTournament"
+            android:label="configure tournament">
+        </activity>
+
+        <activity android:name=".CurrentBracket_SAC_PDF"
+            android:label="CurrentBracket_SAC_PDF">
+        </activity>
+
+
+        <activity android:name=".CreateAccount"
+            android:label="create account">
+        </activity>
+
+        <activity android:name=".LoginAccount"
+        android:label="login account">
+        </activity>
+
+        <activity android:name=".OrganizerLogin"
+            android:label="tournament settings">
+        </activity>
+
+        <activity android:name=".PlayerProfile"
+            android:label="player profile">
+        </activity>
+
+        <activity android:name=".Swiss"
+            android:label="Swiss">
+        </activity>
+
+        <activity android:name=".TournamentSettings"
+            android:label="tournament settings">
+        </activity>
+
+        <activity android:name=".TournamentManagement"
+            android:label="TournamentManagement">
+        </activity>
+        <activity android:name=".PlayerPlacements"
+            android:label="player placements"
+            android:exported="true">
+        </activity>
+
+
+
+
+
+
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
